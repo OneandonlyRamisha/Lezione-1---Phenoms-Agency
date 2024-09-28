@@ -3,13 +3,48 @@
     padding: 0;
  }
 
+/********General outline***********/
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    color: #343a40;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #333;;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/********************************/
+
+
 main {
-    height: 100vh;   
+    min-height: 100vh;   
     background-color: #e9f7ec;
 }
 
+
+
+
  nav{
-    margin-top: 0px;
     margin: 0px 90px;
     padding-top: 15px;
     display: flex;
@@ -24,21 +59,16 @@ main {
     padding: 10px;
 
 }
-
 nav ul li {
     list-style: none;
-    text-transform: uppercase;
-    
-
+    text-transform: uppercase;   
 }
 
 nav ul li a {
-    text-decoration: none;
     padding: 20px;
     color: #28a745;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    transition: all 0.4s ease;
     font-size: 18px;
     display: inline-block;
 
@@ -50,10 +80,27 @@ nav .clickable-nav li a:hover {
     transform: scale(1.15);
 
 }
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #28a745;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Prevent scrolling when menu is open */
+body.no-scroll {
+    overflow: hidden;
+}
 
 .logo {
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
     font-size: 18px;
     color: #28a745;
 }
@@ -90,27 +137,15 @@ nav .clickable-nav li a:hover {
 }
 
 .hero-header{
-    justify-content: center;
     color: #28a745;
-    display: flex;
-    font-family: "Inter", sans-serif;
-    text-transform: uppercase;
+    text-align: center;
     font-weight: 900;
     font-size: 64px;
-}
-
-
-.quoter-box{
-    margin-top: 36px; 
 }
 
 .hero-quote{
     margin-top: 36px;
     text-align: center;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    color: #343a40;
 }
 
 .hero-buttom{
@@ -129,7 +164,6 @@ nav .clickable-nav li a:hover {
 }
 
 .hero-buttom a{
-    text-decoration: none;
     color: #28a745;
     text-align: center;
 }
@@ -170,7 +204,6 @@ nav .clickable-nav li a:hover {
     margin-top: 96px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
 }
 
 .about-text{
@@ -179,34 +212,26 @@ nav .clickable-nav li a:hover {
 }
 
 .what-we-do{
-    font-family: "Poppins", sans-serif;
     font-size: 20px;
-    color: #343a40;
     
 }
 
 .about-us-header{
     margin-top: 36px;
-    font-family: "Poppins", sans-serif;
     font-size: 48px;
     line-height: 0.9;
-    color: #343a40;
-    text-transform: uppercase;
 }
 
 .about-img img{
     object-fit: cover;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     border-radius: 30px;
 }
 
 .about-paragraph{
     margin-top: 48px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
     padding-right:100px;
-    font-size: 18px;
 }
 
 .new-line{
@@ -215,7 +240,6 @@ nav .clickable-nav li a:hover {
 }
 
 .about-us-cta{
-    text-decoration: none;
     color: #343a40;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
@@ -239,7 +263,7 @@ nav .clickable-nav li a:hover {
 .stories-section{
     margin-top: 96px;
     background-color: #e9f7ec;
-    height: 115vh;
+    
 }
 
 
@@ -252,42 +276,32 @@ nav .clickable-nav li a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* 6 equal columns */
     grid-template-rows: repeat(2, 230px); /* 2 equal rows */
     gap: 28px;
-    height: 100vh;
     margin-left: 60px;
     margin-right: 60px;
+    padding-bottom: 48px;
 }
 
 .stories-header{
     text-align: center;
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
     font-size: 48px;
-    color: #343a40;
     margin-bottom: 10px;
     padding-top: 48px;
 }
 .sub-heading-stories{
-    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 20px;
-    color: #343a40;
     text-align: center;
 }
 
 .stories-section div h3{
-    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 14px;
-    color: #343a40;
     margin-bottom: 84px;
-    color: #343a40;
 }
 
 .stories-section div h4{
     font-size: 48px;
-    font-family: "Poppins", sans-serif;
     font-weight: 800;
-    color: #343a40;
 }
 
 .green{
@@ -296,8 +310,7 @@ nav .clickable-nav li a:hover {
     padding: 20px;
 }
 
-.green h4{
-    font-family: "poppins", sans-serif;
+.green h4{  
     font-weight: 800;
     font-size: 48px;
 }
@@ -347,18 +360,14 @@ nav .clickable-nav li a:hover {
 }
 
 .Services-header{
-    font-family: "Poppins", sans-serif;
     font-size: 48px;
-    color: #343a40;
     margin-bottom: 10px;
     text-align: center;
 }
 
 .services-subheader{
-    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 24px;
-    color: #343a40;
     text-align: center;
     margin-bottom: 64px;
 }
@@ -380,17 +389,13 @@ nav .clickable-nav li a:hover {
 
 .prices-flex div h4{
     font-size: 20px;
-    font-family: "Inter", sans-serif;
     text-align: center;
     margin-bottom: 8px;
-    color: #333;
 }
 
 .prices-flex div h2{
-    color: #333;
     text-align: center;
     font-size: 26px;
-    font-family: "Inter", sans-serif;
     margin-bottom: 30px;
 
 
@@ -408,7 +413,6 @@ nav .clickable-nav li a:hover {
 
 .prices-flex div a{
     color: #fff;
-    text-decoration: none;
     transition: all 0.3s ease-in-out;
     font-size: 36px;
     font-family: "Poppins", sans-serif;
@@ -425,19 +429,3 @@ nav .clickable-nav li a:hover {
     box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.6); /* Inner shadow effect */
 
 }
-.footer {
-    background-color: #e9f7ec;  /* Dark green to match your theme */
-    color: #28a745;  
-    font-weight: 800;           /* White text for contrast */
-    text-align: center;         /* Center the text */
-    padding: 10px 0;            /* Add some vertical padding */
-    font-size: 14px;            /* Slightly smaller font size */
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-
-  .footer p {
-    margin: 0; /* Remove default margin for clean look */
-    font-family: "Inter", sans-serif;
-  }

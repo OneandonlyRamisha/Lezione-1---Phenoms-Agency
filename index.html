@@ -16,49 +16,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <title>Phenoms Agency</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styling/style.css">
+    <link rel="stylesheet" href="Styling/media-queries.css">
 </head>
 <body>
-    <main>
+    <main id="hero">
         <nav>
-            <h1 class="logo">Phenoms Agency</h1>
+            <h2 class="logo">Phenoms Agency</h1>
             <ul class="clickable-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Stories</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#stories">Stories</a></li>
+                <li><a href="#services">Services</a></li>
                 
 
             </ul>
-            <ul class="cta">
-                <li><a href="https://api.leadconnectorhq.com/widget/booking/WSThbnyBnUnRbReYfxLs">Book a Call</a></li>
+            <ul>
+                <li><a class="cta" href="https://api.leadconnectorhq.com/widget/booking/WSThbnyBnUnRbReYfxLs">Book a Call</a></li>
             </ul>
+
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+        </nav>
+
         </nav>
 
         <section class="hero-section">
             <div class="center">
-            <h1 class="hero-header">Book More</h1>
-            <h1 class="hero-header">meetings, grow</h1> 
-            <h1 class="hero-header">your sales</h1>
+                <h1 class="hero-header">
+                    Book More <br>
+                    Meetings,grow <br>
+                    Your sales <br>
+                </h1>
 
-            <p class="hero-quote">We help B2B companies secure 100-120 qualified appointments monthly with proven systems and strategic outreach.</p>
+                <p class="hero-quote">We help B2B companies secure 100-120 qualified appointments monthly with proven systems and strategic outreach.</p>
             
             
-            <ul class="hero-buttom">
-                <li class="hero-buttom-items button-cta"><a href="https://api.leadconnectorhq.com/widget/booking/WSThbnyBnUnRbReYfxLs">Book a call</a></li>
-                <li class="hero-buttom-items stories-cta"><a href="#">Stories</a></li>
-            </ul>
+                <ul class="hero-buttom">
+                    <li class="hero-buttom-items button-cta"><a href="https://api.leadconnectorhq.com/widget/booking/WSThbnyBnUnRbReYfxLs">Book a call</a></li>
+                    <li class="hero-buttom-items stories-cta"><a href="#">Stories</a></li>
+                </ul>
 
             </div>
         </section>
     </main>
 
-    <section class="about-us-section">
+    <section id="about" class="about-us-section">
         <div class="about-text">
             <h4 class="what-we-do">What do we do</h4>
-            <h1 class="about-us-header">building predictable sales machines</h1>
+            <h2 class="about-us-header">building predictable sales machines</h2>
 
-            <p class="about-paragraph">We believe that success in sales goes beyond just booking meetings. 
+            <p class="about-paragraph hide-smaller-screen">We believe that success in sales goes beyond just booking meetings. 
                 It's about building a strong, predictable system that aligns with your company's growth strategy 
                 and drives scalable results.</p>
             <p class="about-paragraph new-line">With our proven experience in helping B2B businesses set <span style="font-weight: 700;">100-120 qualified appointments</span> per month, 
@@ -69,13 +81,13 @@
             <a href="https://api.leadconnectorhq.com/widget/booking/WSThbnyBnUnRbReYfxLs" class="about-us-cta">Book a call</a>   
         </div>
         <div class="about-img">
-            <img src="9049.jpg" alt="man presenting something">
+            <img src="Images/About-img.jpg" alt="man presenting something">
         </div>
     </section>
 
-    <section class="stories-section">
-        <h1 class="stories-header">Our Success in Figures</h1>
-        <h2 class="sub-heading-stories">Each number telling story of collaboration and growth</h2>
+    <section id="stories" class="stories-section">
+        <h2 class="stories-header">Our Success in Figures</h2>
+        <h3 class="sub-heading-stories">Each number telling story of collaboration and growth</h3>
         <div class="stroies-section-grid">
             <div class="green">
                 <h3>Total clients</h3>
@@ -86,14 +98,14 @@
                 <h4>9,000+</h4>
             </div>
             <div class="first-img">
-                <img src="2148955558.jpg" style="height: 100%; width: 100%; border-radius: 20px; object-fit: cover;">
+                <img src="Images/stories-person-img.jpg" style="height: 100%; width: 100%; border-radius: 20px; object-fit: cover;">
             </div>
             <div class="yellow">
                 <h3>Total Sales generated</h3>
                 <h4>200M+</h4>
             </div>
             <div class="second-img">
-                <img src="2148513898.jpg" style="height: 100%; width: 100%; border-radius: 20px;">
+                <img src="Images/Stories-group-img.jpg" style="height: 100%; width: 100%; border-radius: 20px;">
             </div>
             <div class="red">
                 <h3>Expected Revenue</h3>
@@ -106,8 +118,8 @@
         </div>
     </section>
 
-    <section class="Services">
-        <h1 class="Services-header">Simple Pricing, Right Value</h1>
+    <section id="services" class="Services">
+        <h2 class="Services-header">Simple Pricing, Right Value</h2>
         <h3 class="services-subheader">Find the plan that fits you the best</h3>
 
         <div class="prices-flex">
@@ -155,9 +167,22 @@
 -->
 
 
-    <footer class="footer">
-        <p>&copy; 2024 Phenoms Agency. All rights reserved.</p>
-    </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const burger = document.getElementById('burger');
+        const nav = document.querySelector('.clickable-nav');
+        const body = document.body;
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            body.classList.toggle('no-scroll'); // Prevent scrolling when the menu is open
+
+            // Animate burger
+            burger.classList.toggle('toggle');
+        });
+    });
+</script>
 
 </body>
 </html> 
