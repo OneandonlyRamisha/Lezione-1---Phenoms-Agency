@@ -148,3 +148,51 @@
     }
 }
 
+@media (min-width: 1600px){
+    .about-paragraph{
+        font-size: 3rem;
+    }
+    .about-us-header{
+        font-size: 5.4rem;
+    }
+
+    .about-us-cta{
+        font-size: 2.8rem;
+    }
+    .what-we-do{
+        font-size: 2.6rem;
+    }
+}
+
+@media (min-width: 1800px){
+    .about-us-header{
+        font-size: 6.4rem;
+    }
+    .about-us-cta{
+        font-size: 3.6rem;
+    }
+    .what-we-do{
+        font-size: 3rem;
+    }
+}
+@media (min-width: 2100px){
+    .about-us-header{
+        font-size: 7.2rem;
+    }
+    .about-paragraph{
+        font-size: 3.6rem;
+    }
+    .what-we-do{
+        font-size: 3.6rem;
+    }
+}
+
+@media (min-width: 2345px) {
+    .about-us-header{
+        font-size: 8.4rem;
+    }
+    .about-us-cta{
+        font-size: 4.2rem;
+    }
+    
+}

@@ -131,8 +131,8 @@ nav{
         left: 100%;
         top: 7rem;
         flex-direction: column;
-        justify-content: start;
-        padding-top: 12.6rem;
+        /* justify-content: center; */
+        justify-content: center; 
         gap: 2.4rem;
         background-color: #e9f7ec;
         width: 100%;
