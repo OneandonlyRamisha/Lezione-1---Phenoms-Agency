@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body.no-scroll{
+    overflow: hidden;
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Poppins", sans-serif;
+    color: #343a40;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+p{
+    font-size: 18px;
+    color: #333;;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+a:link,
+a:visited,
+a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.section-paddings-margins{
+    padding: 0rem 6rem;
+    margin-top: 9.6rem;
+}
+
+.header{
+    font-weight: 900;
+    font-size: 6.4rem;
+}
+
+.button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding: 1.5rem 4.5rem;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    border-radius: 100rem;
+}

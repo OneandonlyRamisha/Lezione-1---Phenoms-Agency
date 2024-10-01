@@ -1,0 +1,150 @@
+.about-us-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 10rem;
+}
+
+.what-we-do{
+    font-size: 2rem;
+}
+
+.about-us-header{
+    margin-top: 3.6rem;
+    font-size: 4.8rem;
+    line-height: 0.9;
+    margin-right: 4.4rem;
+
+}
+
+.about-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.about-paragraph{
+    margin-top: 4.8rem;
+    margin-right: 4.4rem;
+}
+
+.new-line{
+    margin-top: 2.4rem;
+    margin-bottom: 4.8rem;
+}
+
+.about-us-cta{
+    color: #343a40;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    border: solid 2px #343a40;
+    padding: 15px 30px;
+    border-radius: 20px;
+}
+
+.about-us-cta:hover{
+    background-color: #28a745;
+    color: #ffff;
+    border: solid 2px #28a745;
+}
+
+
+@media (max-width: 1330px) {
+    .about-us-header{
+        font-size: 4rem;
+    }
+
+    
+}
+
+@media (max-width: 1150px){
+    .about-us-header{
+        font-size: 3.4rem;
+    }
+}
+
+@media (max-width: 1005px){
+    .about-us-header{
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 865px){
+    .about-us-header{
+        font-size: 2.4rem;
+    }
+    .what-we-do{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 770px){
+    .about-us-header{
+        font-size: 2rem;
+    }
+    .what-we-do{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 680px){
+    .about-img img{
+        display: none;
+    }
+    .about-us-section{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 575px){
+    .about-us-header{
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 505px){
+    .about-us-header{
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 445px){
+    .about-us-header{
+        font-size: 2rem;
+    }
+
+    .what-we-do{
+        font-size: 1.6rem;
+    }
+
+    .about-paragraph{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 410px){
+    .about-us-header{
+        font-size: 1.5rem;
+        margin-top: 1.6rem;
+    }
+
+    .what-we-do{
+        font-size: 1.2rem;
+    }
+
+    .about-paragraph{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 1.4rem;
+    }
+    .about-us-cta{
+        font-size: 1rem;
+    }
+
+    .section-paddings-margins{
+        padding: 1.4rem;
+    }
+}
+

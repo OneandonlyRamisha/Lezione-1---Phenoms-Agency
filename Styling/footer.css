@@ -1,0 +1,35 @@
+footer {
+    background-color: #e9f7ec;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer-bottom {
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+
+@media (max-width: 810px) {
+    .footer-bottom p{
+        font-size: 1.4rem;
+    }
+    
+  }
+
+@media (max-width: 450px) {
+    .footer-bottom p{
+        font-size: 1.2rem;
+    }
+  }
+
+@media (max-width: 330px){
+    .footer-bottom p{
+        font-size: 0.9rem;
+    }
+}
+  

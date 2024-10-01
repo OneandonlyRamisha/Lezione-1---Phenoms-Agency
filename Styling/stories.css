@@ -1,0 +1,253 @@
+.stories-section{
+    background-color: #e9f7ec;
+}
+.stroies-section-grid{
+    margin-top: 9.6rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    grid-template-rows: repeat(2, 23rem); 
+    gap: 2rem;
+    padding-bottom: 4.8rem;
+}
+
+.stories-header{
+    text-align: center;
+    font-size: 4.8rem;
+    margin-bottom: 1rem;
+    padding-top: 4.8rem;
+}
+.sub-heading-stories{
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.stories-section div h3{
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 8.4rem;
+}
+
+.stories-section div h4{
+    font-size: 4.8rem;
+    font-weight: 800;
+}
+
+.green{
+    background-color: #b9faca;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.green h4{  
+    font-weight: 800;
+    font-size: 4.8rem;
+}
+
+.pink{
+    background-color: #eeb9fa;
+    border-radius: 2rem;
+    padding: 2rem;
+
+}
+
+.yellow{
+    background-color: #fae2b0;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.red{
+    background-color: #fabab9;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.blue{
+    background-color: #b9dafa;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.second-column{
+    grid-column: 2/4;
+}
+
+.first-img{
+    grid-column: 4/6;
+    grid-row: 1/3;
+}
+
+.second-img{
+    grid-row: 2;
+    grid-column: 1/3;
+}
+
+@media (max-width: 1024px){
+    .stroies-section-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .first-img img{
+        display: none;
+    }
+    .second-img img{
+        display: none;
+    }
+    .red{
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+    .blue{
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+
+    .prices-flex{
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .prices-flex div{
+        padding: 25px 60px;
+    }
+
+    .prices-flex div h4{
+        font-size: 24px;
+    }
+
+    .prices-flex div h2{
+        font-size: 36px;
+    }
+
+    .prices-flex ul {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1200px){
+    .stroies-section-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .first-img img{
+        display: none;
+    }
+    .second-img img{
+        display: none;
+    }
+    .red{
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+    .blue{
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .stories-header{
+        font-size: 3.6rem;
+    }
+    .sub-heading-stories{
+        font-size: 1.6rem;
+    }
+    .stroies-section-grid{
+        margin-top: 4.8rem;
+        gap: 1rem;
+    }
+    .stroies-section-grid div h3{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .stroies-section-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0.5rem;
+        margin-top: 2.4rem;
+    }
+    .stories-header{
+        font-size: 2.4rem;
+    }
+    .sub-heading-stories{
+        font-size: 1.2rem;
+    }
+    .green{
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+    .red{
+        grid-row: 1;
+        grid-column: 4/5;
+    }
+    .blue{
+        grid-row: 2;
+        grid-column: 1/3;
+    }
+    .yellow{
+        grid-row: 2;
+        grid-column: 4/5;
+    }
+    .pink{
+        grid-row: 3;
+        grid-column: 1/7;
+    }
+    
+}
+
+
+@media (max-width: 510px) {
+    .stories-header{
+        font-size: 1.8rem;
+    }
+    .sub-heading-stories{
+        font-size: 0.9rem;
+    }
+    .stroies-section-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .green{
+        grid-row: 1;
+        grid-column: 1/7;
+    }
+    .pink{
+        grid-row: 2;
+        grid-column: 1/7;
+    }
+    .red{
+        grid-row: 3;
+        grid-column: 1/7;
+    }
+    .blue{
+        grid-row: 4;
+        grid-column: 1/7;
+    }
+    .yellow{
+        grid-row: 5;
+        grid-column: 1/7;
+    }
+
+    
+}
+
+@media (max-width: 325px) {
+    .stories-header{
+        font-size: 1.6rem;
+    }
+    .sub-heading-stories{
+        font-size: 0.6rem;
+    }
+    .stroies-section-grid div h4{
+        font-size: 2.4rem;
+    }
+    .stroies-section-grid div h3{
+        font-size: 1rem
+    }
+    
+}

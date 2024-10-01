@@ -16,106 +16,105 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <title>Phenoms Agency</title>
-    <link rel="stylesheet" href="Styling/style.css">
-    <link rel="stylesheet" href="Styling/media-queries.css">
+    <link rel="stylesheet" href="Styling/general.css">
+    <link rel="stylesheet" href="Styling/hero.css">
+    <link rel="stylesheet" href="Styling/about.css">
+    <link rel="stylesheet" href="Styling/stories.css">
+    <link rel="stylesheet" href="Styling/prices.css">
+    <link rel="stylesheet" href="Styling/footer.css">
 </head>
 <body>
     <main id="hero">
+
         <nav>
             <h2 class="logo">Phenoms Agency</h1>
-            <ul class="clickable-nav">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#stories">Stories</a></li>
-                <li><a href="#services">Services</a></li>
-                
-
+            <ul class="nav-items">
+                <li><a class="nav-items-link1" href="#hero">Home</a></li>
+                <li><a class="nav-items-link2" href="#about">About us</a></li>
+                <li><a class="nav-items-link3" href="#stories">Stories</a></li>
+                <li><a class="nav-items-link4" href="#services">Services</a></li>
             </ul>
-            <ul>
-                <li><a class="cta" href="https://api.leadconnectorhq.com/widget/booking/WSThbnyBnUnRbReYfxLs">Book a Call</a></li>
-            </ul>
+            <a class="cta" href="https://api.leadconnectorhq.com/widget/booking/WSThbnyBnUnRbReYfxLs">Book a Call</a>
 
-            <div class="burger" id="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
 
-        </nav>
+        </nav>  
 
-        </nav>
-
-        <section class="hero-section">
+        <section class="hero-section section-paddings-margins">
             <div class="center">
-                <h1 class="hero-header">
+                <h1 class="hero-header header">
                     Book More <br>
                     Meetings,grow <br>
                     Your sales <br>
                 </h1>
 
-                <p class="hero-quote">We help B2B companies secure 100-120 qualified appointments monthly with proven systems and strategic outreach.</p>
+                <p class="hero-quote">We help B2B companies secure 100-120 qualified appointments monthly <br> <span class="hidden-text">with proven systems and strategic outreach.</span></p>
             
             
-                <ul class="hero-buttom">
-                    <li class="hero-buttom-items button-cta"><a href="https://api.leadconnectorhq.com/widget/booking/WSThbnyBnUnRbReYfxLs">Book a call</a></li>
-                    <li class="hero-buttom-items stories-cta"><a href="#">Stories</a></li>
+                <ul class="hero-buttons">
+                    <li><a class="button hero-cta" href="https://api.leadconnectorhq.com/widget/booking/WSThbnyBnUnRbReYfxLs">Book a call</a></li>
+                    <li><a class="button hero-secondary-cta" href="#">Stories</a></li>
                 </ul>
 
             </div>
         </section>
     </main>
 
-    <section id="about" class="about-us-section">
-        <div class="about-text">
-            <h4 class="what-we-do">What do we do</h4>
-            <h2 class="about-us-header">building predictable sales machines</h2>
+ <section id="about" class="about-us-section section-paddings-margins">
+            <div class="about-text">
+                <h4 class="what-we-do">What do we do</h4>
+                <h2 class="about-us-header">building predictable sales machines</h2>
 
-            <p class="about-paragraph hide-smaller-screen">We believe that success in sales goes beyond just booking meetings. 
+                <p class="about-paragraph hide-smaller-screen">We believe that success in sales goes beyond just booking meetings. 
                 It's about building a strong, predictable system that aligns with your company's growth strategy 
                 and drives scalable results.</p>
-            <p class="about-paragraph new-line">With our proven experience in helping B2B businesses set <span style="font-weight: 700;">100-120 qualified appointments</span> per month, 
+                <p class="about-paragraph new-line">With our proven experience in helping B2B businesses set <span style="font-weight: 700;">100-120 qualified appointments</span> per month, 
                 we empower you to achieve consistent revenue growth by optimizing your sales process and 
                 creating a sustainable pipeline for long-term success.</p>
              
                 
-            <a href="https://api.leadconnectorhq.com/widget/booking/WSThbnyBnUnRbReYfxLs" class="about-us-cta">Book a call</a>   
-        </div>
-        <div class="about-img">
-            <img src="Images/About-img.jpg" alt="man presenting something">
-        </div>
+                <a href="https://api.leadconnectorhq.com/widget/booking/WSThbnyBnUnRbReYfxLs" class="about-us-cta">Book a call</a>   
+            </div>
+            <div class="about-img">
+                <img src="Images/About-img.jpg" alt="man presenting something">
+            </div>
     </section>
-
-    <section id="stories" class="stories-section">
-        <h2 class="stories-header">Our Success in Figures</h2>
-        <h3 class="sub-heading-stories">Each number telling story of collaboration and growth</h3>
-        <div class="stroies-section-grid">
-            <div class="green">
-                <h3>Total clients</h3>
-                <h4>200+</h4>
+ 
+    <section id="stories" class="stories-section section-paddings-margins">
+            <h2 class="stories-header">Our Success in Figures</h2>
+            <h3 class="sub-heading-stories">Each number telling story of collaboration and growth</h3>
+            <div class="stroies-section-grid">
+                <div class="green">
+                    <h3>Total clients</h3>
+                    <h4>200+</h4>
+                </div>
+                <div class="second-column pink">
+                    <h3>Qualified meetings booked</h3>
+                    <h4>9,000+</h4>
+                </div>
+                <div class="first-img">
+                    <img src="Images/stories-person-img.jpg" style="height: 100%; width: 100%; border-radius: 20px; object-fit: cover;">
+                </div>
+                <div class="yellow">
+                    <h3>Total Sales generated</h3>
+                    <h4>200M+</h4>
+                </div>
+                <div class="second-img">
+                    <img src="Images/Stories-group-img.jpg" style="height: 100%; width: 100%; border-radius: 20px;">
+                </div>
+                <div class="red">
+                    <h3>Expected Revenue</h3>
+                    <h4>150M+</h4>
+                </div>
+                <div class="blue">
+                    <h3>Years in business</h3>
+                    <h4>12+</h4>
+                </div>
             </div>
-            <div class="second-column pink">
-                <h3>Qualified meetings booked</h3>
-                <h4>9,000+</h4>
-            </div>
-            <div class="first-img">
-                <img src="Images/stories-person-img.jpg" style="height: 100%; width: 100%; border-radius: 20px; object-fit: cover;">
-            </div>
-            <div class="yellow">
-                <h3>Total Sales generated</h3>
-                <h4>200M+</h4>
-            </div>
-            <div class="second-img">
-                <img src="Images/Stories-group-img.jpg" style="height: 100%; width: 100%; border-radius: 20px;">
-            </div>
-            <div class="red">
-                <h3>Expected Revenue</h3>
-                <h4>150M+</h4>
-            </div>
-            <div class="blue">
-                <h3>Years in business</h3>
-                <h4>12+</h4>
-            </div>
-        </div>
     </section>
 
     <section id="services" class="Services">
@@ -162,27 +161,60 @@
         </div>
 
     </section>
-<!--
-    <iframe class="calendar-link" src="https://api.leadconnectorhq.com/widget/booking/WSThbnyBnUnRbReYfxLs" frameborder="0"></iframe>
--->
-
 
 
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const burger = document.getElementById('burger');
-        const nav = document.querySelector('.clickable-nav');
-        const body = document.body;
+    const hamburger = document.querySelector(".hamburger");
+    const navmMenu = document.querySelector(".nav-items");
+    const aboutLink = document.querySelector('.about-link')
+    const navLink1 = document.querySelector('.nav-items-link1')
+    const navLink2 = document.querySelector('.nav-items-link2')
+    const navLink3 = document.querySelector('.nav-items-link3')
+    const navLink4 = document.querySelector('.nav-items-link4')
 
-        burger.addEventListener('click', () => {
-            nav.classList.toggle('nav-active');
-            body.classList.toggle('no-scroll'); // Prevent scrolling when the menu is open
-
-            // Animate burger
-            burger.classList.toggle('toggle');
-        });
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navmMenu.classList.toggle("active");
+        document.body.classList.toggle("no-scroll")
     });
+
+    navLink1.addEventListener("click", () =>{
+        navmMenu.classList.remove("active")
+        document.body.classList.remove("no-scroll")
+        hamburger.classList.remove("active")
+
+    });
+
+    navLink2.addEventListener("click", () =>{
+        navmMenu.classList.remove("active")
+        document.body.classList.remove("no-scroll")
+        hamburger.classList.remove("active")
+
+    });
+
+    navLink3.addEventListener("click", () =>{
+        navmMenu.classList.remove("active")
+        document.body.classList.remove("no-scroll")
+        hamburger.classList.remove("active")
+
+    });
+
+    navLink4.addEventListener("click", () =>{
+        navmMenu.classList.remove("active")
+        document.body.classList.remove("no-scroll")
+        hamburger.classList.remove("active")
+
+    });
+
+
 </script>
+
+<footer>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Phenoms Agency. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
 
 </body>
 </html> 
